@@ -45,3 +45,43 @@
     }
   }
 }
+
+@media only screen and (max-width: 375px) {
+  .container {
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+  .security {
+    width: 375px;
+
+    &__wrap {
+      display: flex;
+      flex-wrap: wrap;
+      &__cards {
+        text-align: center;
+        &__head {
+          width: 311px;
+        }
+        &__text {
+          width: 311px;
+
+          text-align: center;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 25px;
+        }
+        &__img {
+          width: 56px;
+          margin-left: 12px;
+          margin-bottom: 24px;
+        }
+      }
+
+      &__img {
+        display: none;
+      }
+    }
+  }
+}

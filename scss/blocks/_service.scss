@@ -103,3 +103,160 @@
     margin-bottom: 200px;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .service img {
+    width: 445px;
+  }
+
+  .container {
+    max-width: 375px;
+    padding: 0 32px;
+  }
+
+  .service {
+    width: 375px;
+
+    &__last-first {
+      margin-bottom: 120px;
+    }
+
+    &__wrapper {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__first {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+
+      &__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &__left__head {
+        width: 475px;
+        text-align: center;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -1.429px;
+      }
+
+      &__left__text {
+        width: 573px;
+      }
+
+      &__left__img {
+        margin-bottom: 56px;
+
+        &-sec {
+          margin-bottom: 56px;
+        }
+      }
+      &__img {
+        display: none;
+      }
+      &__right__img {
+        display: none;
+      }
+    }
+
+    &__img {
+      display: none;
+    }
+
+    &__second {
+      display: flex;
+      flex-direction: column;
+      &__img {
+        margin-bottom: 56px;
+      }
+      &__left__img {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  img {
+    width: 311px;
+  }
+
+  .container {
+    max-width: 375px;
+    padding: 0 32px;
+  }
+
+  .service {
+    width: 375px;
+
+    &__last-first {
+      margin-bottom: 120px;
+    }
+
+    &__wrapper {
+      text-align: center;
+    }
+    &__first {
+      display: flex;
+      flex-direction: column-reverse;
+
+      &__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &__left__head {
+        width: 311px;
+        text-align: center;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -1.429px;
+      }
+
+      &__left__text {
+        width: 311px;
+      }
+
+      &__left__img {
+        margin-bottom: 56px;
+
+        &-sec {
+          margin-bottom: 56px;
+        }
+      }
+      &__img {
+        display: none;
+      }
+
+      &__right__img {
+        display: none;
+      }
+    }
+
+    &__img {
+      display: none;
+    }
+
+    &__second {
+      display: flex;
+      flex-direction: column;
+      &__img {
+        margin-bottom: 56px;
+      }
+      &__left__img {
+        display: none;
+      }
+    }
+  }
+}
