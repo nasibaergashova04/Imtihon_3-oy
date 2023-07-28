@@ -58,6 +58,7 @@
     &__wrap {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       &__cards {
         text-align: center;
         &__head {
@@ -74,7 +75,7 @@
         }
         &__img {
           width: 56px;
-          margin-left: 12px;
+          margin-left: 125px;
           margin-bottom: 24px;
         }
       }

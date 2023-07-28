@@ -1,6 +1,14 @@
 .footer {
   width: 1440px;
   margin: 0 auto;
+
+  &__app-store {
+    display: none;
+  }
+
+  &__play-market {
+    display: none;
+  }
   &__wrapper {
     background-image: url(../../image/footer__img.png);
     background-repeat: no-repeat;
@@ -108,6 +116,107 @@
     }
     &__social-media {
       cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .footer {
+    width: 375px;
+
+    &__app-store {
+      display: inline;
+      width: 113.571px;
+    }
+
+    &__play-market {
+      display: inline;
+      width: 113.571px;
+    }
+
+    &__wrapper {
+      width: 375px;
+      background-image: url(../../image/footer__mobbg.png);
+      background-repeat: no-repeat;
+      background-size: 375px;
+      background-position: center;
+
+      &__app-store {
+        display: none;
+      }
+
+      &__play-market {
+        display: none;
+      }
+      &__first {
+        display: flex;
+        flex-direction: column;
+        &__head {
+          width: 311px;
+          text-align: center;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 32px; /* 100% */
+          letter-spacing: -1.429px;
+          margin-bottom: 40px;
+        }
+
+        &__right {
+        }
+        &__logo {
+        }
+      }
+    }
+
+    &__card {
+      width: 375px;
+      background-color: #333a44;
+      padding-top: 35px;
+      padding-bottom: 33px;
+      margin-top: -15px;
+
+      &__wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        margin-bottom: 85px;
+      }
+      &__logo {
+        &-sec {
+          width: 107.817px;
+          margin-bottom: 41px;
+          vertical-align: middle;
+        }
+      }
+      &__link {
+        color: #939caa;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 25px;
+
+        &:hover {
+          color: #fcb72b;
+
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 25px;
+        }
+      }
+      &__social-media {
+        cursor: pointer;
+        width: 120px;
+      }
     }
   }
 }
